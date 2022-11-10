@@ -1,0 +1,4 @@
+﻿  main.c
+c:\users\harry\desktop\school\高階程式語言\hw4\ntut-hw4-master\6-11\6.11\main.c(29): warning C4101: 'ii': 未參考的區域變數
+  LINK : 最後的累加連結找不到或未建置 C:\Users\harry\Desktop\school\高階程式語言\Hw4\NTUT-HW4-master\6-11\Debug\6.11.exe，正在執行完整連結
+  6.11.vcxproj -> C:\Users\harry\Desktop\school\高階程式語言\Hw4\NTUT-HW4-master\6-11\Debug\6.11.exe
