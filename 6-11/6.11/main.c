@@ -3,41 +3,35 @@
 
 #define SIZE 10
 
-void bubble_sort(int[], int);
-
 int main()
 {
-	int D[SIZE] = {57,5,8,77,6,98,76,3,84,18},i;
+	int D[SIZE] = { 57,5,182,77,441,98,76,3,84,5 };
+	int i,j,temp;
 
-	printf("Origin array :\n");
+	printf("Array : \n\n");
 	for (i = 0;i < SIZE;i++)
-		printf("%4d", D[i]);
+		printf("%5d", D[i]);
 
-	bubble_sort(D, SIZE);
 
-	printf("\n\nFinal array :\n");
-	for (i = 0;i < SIZE;i++)
-		printf("%4d", D[i]);
-
-	printf("\n");
-	system("pause");
-	return 0;
-}
-
-void bubble_sort(int data[], int n)
-{
-	int i,j,temp,ii;
-	for (i = n-1;i >= 0;i--)
+	for (i = (SIZE-1); i >= 0; i--)
 	{
-		for (j = 0;j < i;j++)
+		for (j = 0; j < i; j++)
 		{
-			if (data[j] > data[j + 1])
+			if (D[j] > D[j + 1])
 			{
-				temp = data[j + 1];
-				data[j + 1] = data[j];
-				data[j] = temp;
+				temp = D[j + 1];
+				D[j + 1] = D[j];
+				D[j] = temp;
 			}
 		}
-		
+
 	}
+
+	printf("\n\nResult : \n\n");
+	for (i = 0;i < SIZE;i++)
+		printf("%5d", D[i]);
+
+	printf("\n\n");
+	system("pause");
+	return 0;
 }
